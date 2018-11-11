@@ -1,3 +1,5 @@
+
+
 analysis of codeforces problem http://codeforces.com/contest/1054/problem/E
 
 #include <bits/stdc++.h>
@@ -124,6 +126,87 @@ Syntax:
 void reverse(BidirectionalIterator first, BidirectionalIterator last)
 BidirectionalIterator is an iterator that can be used to access any
 elements of a container in both forward and backward direction.
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+    
+    int a[10]={1,2,3,4,5,6,7,8,9,10};
+    
+    reverse(begin(a)+4,begin(a)+10);/* .begin() and .end() are not present in arrays use begin(array) and end(array) instead*/
+    for(int i=0;i<10;i++)
+    cout<<a[i]<<' ';
+    return 0;
+}
+
+/*this time using vector and reverse iterators*/
+
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+int main(){
+    
+    int a[10]={1,2,3,4,5,6,7,8,9,10};
+    
+    reverse(begin(a)+4,begin(a)+10);
+    for(int i=0;i<10;i++)
+    cout<<a[i]<<' ';
+    cout<<'\n';
+    /* using a vector*/
+    
+    vector<int> v;
+    for(int i=0;i<8;i++)
+       v.push_back(i+8);
+       
+    reverse(v.rbegin(),v.rend());            /* testing the bidirectional claim*/
+    vector<int>::iterator it;
+    
+    for(it=v.begin();it!=v.end();it++)
+       cout<<*(it)<<' ';
+    
+    return 0;
+}
+
+
+/* can we add int to an iterator
+YES WE CAN .SUBTRACT AS WELL
+
+*/
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+int main(){
+    
+    int a[10]={1,2,3,4,5,6,7,8,9,10};
+    
+    reverse(begin(a)+4,begin(a)+10);
+    for(int i=0;i<10;i++)
+    cout<<a[i]<<' ';
+    cout<<'\n';
+    /* using a vector*/
+    
+    vector<int> v;
+    for(int i=0;i<8;i++)
+       v.push_back(i+8);
+       
+    reverse(v.begin(),v.begin()+3);              /* adding int to iterator*/
+    vector<int>::iterator it;
+    
+    for(it=v.begin();it!=v.end()-1;it++)        /*can subract int with an iterator*/
+       cout<<*(it+1)+1<<' ';
+    
+    return 0;
+}
+
+
+
+
+
   */
   func(0);
 	func(1);
