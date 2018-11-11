@@ -149,7 +149,25 @@ The member function clear() can be used to reset the state flags.
 
 /*FOR FURTHER READ GO TO http://www.cplusplus.com/doc/tutorial/files/*/
 
-
+/* THIS PROGRAM WORKS FOR READING A FILE AND OUTPUTS EACH WORD IN THE WHOLE TEXT*/
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+int main(){
+    string line,test;
+    test="test.txt";
+    ifstream freadin(test.c_str());
+	//fwritin.open("test.txt");
+	if(freadin.is_open()){
+	        while(freadin>>line){
+				cout<<line<<endl;
+			}
+    
+    }
+    freadin.close();
+    return 0;
+}
 
 
 
