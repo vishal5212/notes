@@ -153,15 +153,29 @@ The member function clear() can be used to reset the state flags.
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<map>
 using namespace std;
 int main(){
+    map<string,int> words;
+    map<string,int>::iterator itr;
+    string::iterator it;
     string line,test;
     test="test.txt";
     ifstream freadin(test.c_str());
 	//fwritin.open("test.txt");
 	if(freadin.is_open()){
 	        while(freadin>>line){
-				cout<<line<<endl;
+				//cout<<line<<endl;
+				itr=map.find(line);
+				if(itr!=map.end())
+					(itr->second)++;
+				else 
+					{
+					it=line.end();/*maybe -1 it*/
+					if(!isalpha(*it))     /*brackets on it*/
+					line.pop_back();
+					map.insert(pair<string,int>(line,1));
+					}
 			}
     
     }
