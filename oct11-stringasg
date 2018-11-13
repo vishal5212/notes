@@ -183,7 +183,15 @@ int main(){
     return 0;
 }
 
+/*GETTIN TO KNOW STRINGS*/
+/*std::string*/
+/*INPUT FUNCTIONS
+getline()
+push_back(c)
+pop_back()
+*/
 
+#
 
 
 
