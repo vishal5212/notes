@@ -29,3 +29,71 @@ The Docker client (docker) is the primary way that many Docker users interact wi
 the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can
 communicate with more than one daemon.
 */
+
+
+/*
+TCP SYN FLOODING(courtesy:https://www.incapsula.com/ddos/attack-glossary/syn-flood.html)
+TCP SYN Flood
+What is a SYN Flood Attack
+
+TCP SYN flood (a.k.a. SYN flood) is a type of Distributed Denial of Service (DDoS) attack that exploits part of the normal TCP 
+three-way handshake to consume resources on the targeted server and render it unresponsive.
+
+Essentially, with SYN flood DDoS, the offender sends TCP connection requests faster than the targeted machine can process them,
+causing network saturation.
+Attack Description
+
+When a client and server establish a normal TCP “three-way handshake,” the exchange looks like this:
+
+    Client requests connection by sending SYN (synchronize) message to the server.
+    Server acknowledges by sending SYN-ACK (synchronize-acknowledge) message back to the client.
+    Client responds with an ACK (acknowledge) message, and the connection is established.
+
+In a SYN flood attack, the attacker sends repeated SYN packets to every port on the targeted server, often using a fake IP address. The server, unaware of the attack, receives multiple, apparently legitimate requests to establish communication. It responds to each attempt with a SYN-ACK packet from each open port.
+
+The malicious client either does not send the expected ACK, or—if the IP address is spoofed—never receives the SYN-ACK in the 
+first place. Either way, the server under attack will wait for acknowledgement of its SYN-ACK packet for some time. 
+
+ During this time, the server cannot close down the connection by sending an RST packet, and the connection stays open. Before the connection can time out, another SYN packet will arrive. This leaves an increasingly large number of connections half-open – and indeed SYN flood attacks are also referred to as “half-open” attacks. Eventually, as the server’s connection overflow tables fill, service to legitimate clients will be denied, and the server may even malfunction or crash.
+
+While the “classic” SYN flood described above tries to exhaust network ports, SYN packets can also be used in DDoS attacks that try to clog your pipes with fake packets to achieve network saturation. The type of packet is not important. Still, SYN packets are often used because they are the least likely to be rejected by default.
+Methods of Mitigation
+
+While modern operating systems are better equipped to manage resources, which makes it more difficult to overflow connection tables, servers are still vulnerable to SYN flood attacks.
+
+There are a number of common techniques to mitigate SYN flood attacks, including:
+
+Micro blocks—administrators can allocate a micro-record (as few as 16 bytes) in the server memory for each incoming SYN request instead of a complete connection object.
+
+SYN cookies—using cryptographic hashing, the server sends its SYN-ACK response with a sequence number (seqno) that is constructed from the client IP address, port number, and possibly other unique identifying information. When the client responds, this hash is included in the ACK packet. The server verifies the ACK, and only then allocates memory for the connection.
+
+RST cookies—for the first request from a given client, the server intentionally sends an invalid SYN-ACK. This should result in the client generating an RST packet, which tells the server something is wrong. If this is received, the server knows the request is legitimate, logs the client, and accepts subsequent incoming connections from it.
+
+Stack tweaking—administrators can tweak TCP stacks to mitigate the effect of SYN floods. This can either involve reducing the timeout until a stack frees memory allocated to a connection, or selectively dropping incoming connections.
+
+Obviously, all of the above mentioned methods rely on the target network’s ability to handle large-scale volumetric DDoS attacks, with traffic volumes measured in tens of Gigabits (and even hundreds of Gigabits) per second.
+SYN flood - 38 Days of DDoS
+Imperva mitigates a 38 day-long SYN flood and DNS flood multi-vector DDoS attack.
+
+Imperva DDoS protection leverages Anycast technology to balance the incoming DDoS requests across its global network of high-powered scrubbing centers. With the combined capacity of its global network, Incapsula can cost-effectively exceed attacker resources, rendering the DDoS attack ineffective. The service is build to scale on demand, offering ample resources to deal with even the largest of volumetric DDoS attacks.
+
+To assure business continuity, Imperva filtering algorithm continuously analyzes incoming SYN requests, using SYN cookies to selectively allocate resources to legitimate visitors. This enables transparent DDoS mitigation, wtih no downtime, latency of any other business disruptions. 
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
