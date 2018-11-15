@@ -1,0 +1,31 @@
+/*docker
+
+CONTAINERS
+run application withoiut installing operating systems simultaneously on a host operating system where the hypervisor is replaced with 
+docker
+1.gets rid of the large number of intermediate layers like guest file system,guest driver,context switch,virtual device, image format interpreter
+iscsi,nfs that are present in a virtual machine environment
+2.large number of combinations and permutations of hardware platforms and the applications/services which makes it difficult for the developers
+who have to create the same environment in order to get an app/service to work
+
+3.containers get rid of the hypervisor layer which requires redundant os kernels, binaries, libraries for running a vm
+
+4.gets a lot more apps running and makes it easy to package apps 
+5.developers found the solution of develop once and deploy anywhere
+6.admin can configure on any platform
+7.enables consistent environments
+
+DOCKER
+-containerization platform(containerization orchestration)
+-docker packages an app and all of its dependecieds in the form of a  docker container so that the app works seamlessly in any environment
+-enables an app and all of its dependencies to be packaged as a lightweight, portable and self-sufficient container
+DOCKER DAEMON
+The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes.
+A daemon can also communicate with other daemons to manage Docker services.
+
+
+-DOCKER CLIENT
+The Docker client (docker) is the primary way that many Docker users interact with Docker. When you use commands such as docker run, 
+the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can
+communicate with more than one daemon.
+*/
