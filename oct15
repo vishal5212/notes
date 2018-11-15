@@ -257,3 +257,17 @@ Data Breaches Indian restaurant search and discovery service provider Zomato in 
 
 Read more at: https://www.gizbot.com/internet/features/cyber-attacks-that-affected-india-in-2017/articlecontent-pf82318-046533.html
 
+
+Government’s cyber vulnerabilities affect private sector in IRNN hack
+
+A recent report by Seqrite Intelligence Labs, the enterprise security solutions brand of Quick Heal Technologies, disclosed an advertisement they discovered on the Darknet (a small portion of the internet hidden from search engines). The advertisement announced secret access to the servers and databases of over 6,000 Indian organizations – including internet service providers (ISPs) as well as public and private sector organizations. The hacker offered this information for 15 bitcoin (equivalent to approximately USD$73,000). The hacker subsequently offered to execute further cyber-attacks against the listed companies for an undisclosed price.
+
+Seqrite Cyber Intelligence Labs, along with its partner seQtree InfoServices, called it one of the biggest breaches affecting Indian organizations. Seqrite and seQtree reported that the Indian Registry for Internet Names and Numbers (IRINN), which comes under the National Internet Exchange of India, was the organization that hackers had compromised.
+
+After discovering the advertisement, Seqrite and seQtree teams started gathering background research on the hacker but were unable to identify the perpetrator. The research team then contacted the hacker for further details, posing as an interested buyer. The hacker shared a sample of their stolen data, which included an email address of a prominent Indian technology firm and information linked back to the Indian government.
+
+According to Seqrite Intelligence Labs, this hacker may have the capacity to create serious service outages in India. The entities affected by the data breach include the Bombay Stock Exchange, the Reserve Bank of India, the Indian Space Research Organization, Wipro, Mastercard, Visa, Hathaway, IDBI Bank, and Ernst & Young.  
+
+According to researchers, the seller claims to have the ability to tamper the IP allocation pool, which could result in a serious outage or distributed denial of service (DDoS) condition.
+
+
