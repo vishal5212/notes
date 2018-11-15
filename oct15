@@ -224,16 +224,36 @@ int main (void)
 }
 
 
+/*CYBER ATTACKS SINCE 2016 IN INDIA
+*/
 
 
+Petya 
+India was additionally on the top 10 listing of nations to be hit by Petya ransomware attacks, with the nation faring worst among other
+Asia Pacific (APAC) countries. Globally, India took number 7 spot with less than 20 organizations being affected as per Symantec's 
+report. When the attack took place, researchers pointed out that Petya was not really a ransomware like WannaCry but it was rather
+a wiper. What that means is that the aim of the malware was to delete all data, including data on the first sectors of the disk 
+where the information about the operating system was usually stored. The idea of this attack was to cause massive destruction of data,
+not to make financial gains. As such, the most reported incident of this attack in India was on the nation's largest container port, 
+Jawaharlal Nehru Port (JNPT), near Mumbai along with local manufacturing units of global companies. At least one terminal operated by 
+APM Maersk at the busy JNPT was under attack.
+
+Read more at: https://www.gizbot.com/internet/features/cyber-attacks-that-affected-india-in-2017/articlecontent-pf82316-046533.html
 
 
+WannaCry 
+In one of the biggest cyber attacks in history, WannaCry Ransomware swept the world in May. However, in India, the top five cities 
+impacted by the ransomware attack were Kolkata followed by Delhi, Bhubaneswar, Pune, and Mumbai, while the top five states with maximum detections of WannaCry virus were West Bengal, Maharashtra, Gujarat, Delhi NCR, and Odisha. Almost 60 percent of the ransomware attack attempts by the malicious WannaCry virus was targeted at enterprises, while the rest were on individual customers. WannaCry infected computers running on older versions of Microsoft operating systems like XP. As for the impact of the attack, the ransomware locked user's devices and prevented them from accessing data and software until a certain ransom was paid to the criminals. In this case, cybercriminals demanded a fee of about $300 in crypto-currencies like Bitcoin for unlocking the device. Talking about the affected areas, Police Department in Andhra Pradesh were disabled, West Bengal State Electricity Distribution Company Limited (WBSEDCL) were attacked, a government-run hospital in Odisha was targeted, in Gujrat over 120-odd computers connected with GSWAN (Gujarat State Wide Area Network) were affected, Maharashtra Police department was also partially hit. Further computers in two panchayat offices in Wayanad and Pathanamthitta in Kerala too were disabled, and there were reported cases in states like Delhi and Tamil Nadu.
+
+Read more at: https://www.gizbot.com/internet/features/cyber-attacks-that-affected-india-in-2017/articlecontent-pf82315-046533.html
 
 
+Mirai Botnet Malware Though this malware was first discovered in 2016, the threat from this still continues as the creators behind the malware had published the source code for Mirai in hacker forums as open-source. Since the source code was published, the techniques have been adopted in other malware projects. Talking about the botnet malware, Mirai actually took over the web targeting home router users and other loT based devices. In total, the malware affected 2.5 million loT units across the globe. However, it's not clear how many systems have been affected in India. 
+
+Read more at: https://www.gizbot.com/internet/features/cyber-attacks-that-affected-india-in-2017/articlecontent-pf82318-046533.html
 
 
+Data Breaches Indian restaurant search and discovery service provider Zomato in May reported that the company's database was breached which led to personal details of 7.7 million users being stolen. While this was a serious issue, the leaked information was also reportedly listed for sale on a Darknet market. Following the incident, Zomato contacted the hacker and took down the data. Details about the deal have not been disclosed. Similarly, Reliance Jio the trending network service provider was also a victim of a data breach. Interestingly a website called magicapk.com went live after the attack and anyone could search for personal details of Jio customers on this website. The website was later taken down after it went viral.
 
-
-
-
+Read more at: https://www.gizbot.com/internet/features/cyber-attacks-that-affected-india-in-2017/articlecontent-pf82318-046533.html
 
